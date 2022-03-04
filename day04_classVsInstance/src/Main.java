@@ -20,7 +20,7 @@ public class Main {
 
         /**Constructor method of Person class.
          *
-         * @param initialAge (Represents age)
+         * @param initialAge
          */
         public Person(int initialAge){
             //Constructor with parameters.
@@ -34,7 +34,7 @@ public class Main {
                  * print "Age is not valid, setting age to 0.."
                  */
 
-                System.out.print("Age is not valid, setting age to 0.");
+                System.out.print("Age is not valid, setting age to 0.\n");
                 age=0;
             }
             else{
@@ -43,7 +43,8 @@ public class Main {
             }
         }
 
-        /**yearPasses method increases the age instance variable by 3.
+        /**yearPasses method increases the age instance variable by 1.
+         *
          */
         public void yearPasses(){
 
@@ -59,13 +60,13 @@ public class Main {
             //Otherwise prints "You are old.."
 
             if(age<13){
-                System.out.print("\nYou are young.");
+                System.out.println("You are young.");
             }
             else if(age>=13 && age<18){
-                System.out.print("\nYou are a teenager.");
+                System.out.println("You are a teenager.");
             }
             else{
-                System.out.print("\nYou are old.");
+                System.out.println("You are old.");
             }
         }
 
